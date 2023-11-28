@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+#about-me img {
+  width: 100%; /* Obraz zajmie 100% szerokości rodzica */
+  height: auto; /* Zachowaj proporcje obrazu */
+  display: block; /* Usuń białe przestrzenie poniżej obrazu */
+  margin: 0 auto; /* Wyśrodkuj obraz */
+  max-width: 400px; /* Ustaw maksymalną szerokość obrazu */
+  border-radius: 50%; /* Zaokrąglony kształt obrazu */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Dodaj cień */
+}
+
+section {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ff8c00; /* Pomarańczowy kolor */
+}/*# sourceMappingURL=style.css.map */
