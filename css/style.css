@@ -1,27 +1,40 @@
-@charset "UTF-8";
+/* Add your custom styles here */
+
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #f8f9fa; /* Light gray background color */
 }
 
-#about-me img {
-  width: 100%; /* Obraz zajmie 100% szerokości rodzica */
-  height: auto; /* Zachowaj proporcje obrazu */
-  display: block; /* Usuń białe przestrzenie poniżej obrazu */
-  margin: 0 auto; /* Wyśrodkuj obraz */
-  max-width: 400px; /* Ustaw maksymalną szerokość obrazu */
-  border-radius: 50%; /* Zaokrąglony kształt obrazu */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Dodaj cień */
+.container {
+  max-width: 800px; /* Set maximum width for the container */
 }
 
-section {
-  background-color: #fff;
-  color: #000;
+header {
+  background-color: #007bff; /* Bootstrap primary color for the header background */
+  color: #fff; /* White text color */
   padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-h2 {
-  color: #ff8c00; /* Pomarańczowy kolor */
-}/*# sourceMappingURL=style.css.map */
+#experience, #education, #skills, #projects, #about-me, #contact {
+  margin-bottom: 30px; /* Add some space between sections */
+}
+
+.list-group-item {
+  border: none; /* Remove borders from list items */
+}
+
+/* Custom styles for links in the contact section */
+#contact a {
+  margin-right: 10px; /* Add some space between social media icons */
+}
+
+/* Responsive styling for the header text */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 24px;
+  }
+
+  header p {
+      font-size: 16px;
+  }
+}
