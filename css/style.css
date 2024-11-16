@@ -1,31 +1,86 @@
 @charset "UTF-8";
+/* Globalne style */
 body {
   background-color: #000;
   color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-#about-me img {
-  width: 100%; /* Obraz zajmie 100% szerokości rodzica */
-  height: auto; /* Zachowaj proporcje obrazu */
-  display: block; /* Usuń białe przestrzenie poniżej obrazu */
-  margin: 0 auto; /* Wyśrodkuj obraz */
-  max-width: 400px; /* Ustaw maksymalną szerokość obrazu */
-  border-radius: 50%; /* Zaokrąglony kształt obrazu */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Dodaj cień */
+h1, h2 {
+  text-align: center;
+  color: #ff8c00;
 }
 
+a {
+  color: #004cc7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff8c00;
+}
+
+/* Sekcje */
 section {
-  background-color: #fff;
-  color: #000;
+  background-color: #1a1a1a;
+  color: #fff;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-h2 {
-  color: #ff8c00; /* Pomarańczowy kolor */
-}/*# sourceMappingURL=style.css.map */
+/* Lista */
+.list-group-item {
+  background: #292929;
+  color: #fff;
+  border: 1px solid #444;
+}
 
-nav-item nav-link {
-    color: #004cc7;
+/* Ikony */
+.material-icons {
+  vertical-align: middle;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: #ff8c00;
+}
+
+/* Obraz profilowy */
+#about-me img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  display: block;
+  margin: 20px auto;
+}
+
+/* Przyciski */
+.nav-item.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  background: #004cc7;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.nav-item.nav-link:hover {
+  background: #ff8c00;
+  color: #000;
+}
+
+/* Stopka */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
